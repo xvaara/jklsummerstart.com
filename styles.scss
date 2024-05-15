@@ -1,0 +1,162 @@
+$primary: rgb(219,57,49);
+$body-bg: rgb(44, 62, 80);
+$body-color: white;
+$enable-shadows: true;
+$body-emphasis-color: white;
+$link-color: rgb(255, 91, 91);
+$table-bg: transparent;
+
+// Configuration
+@import "bootstrap-styles/scss/functions";
+@import "bootstrap-styles/scss/variables";
+@import "bootstrap-styles/scss/variables-dark";
+@import "bootstrap-styles/scss/maps";
+@import "bootstrap-styles/scss/mixins";
+@import "bootstrap-styles/scss/utilities";
+
+$utilities: map-merge(
+  $utilities, 
+  (
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      ( responsive: true ),
+    ),
+    "rounded-top": map-merge(
+      map-get($utilities, "rounded-top"),
+      ( responsive: true ),
+    ),
+    "rounded-end": map-merge(
+      map-get($utilities, "rounded-end"),
+      ( responsive: true ),
+    ),
+    "rounded-bottom": map-merge(
+      map-get($utilities, "rounded-bottom"),
+      ( responsive: true ),
+    ),
+    "rounded-start": map-merge(
+      map-get($utilities, "rounded-start"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+
+// Layout & components
+@import "bootstrap-styles/scss/root";
+@import "bootstrap-styles/scss/reboot";
+@import "bootstrap-styles/scss/type";
+@import "bootstrap-styles/scss/images";
+@import "bootstrap-styles/scss/containers";
+@import "bootstrap-styles/scss/grid";
+@import "bootstrap-styles/scss/tables";
+// @import "bootstrap-styles/scss/forms";
+@import "bootstrap-styles/scss/buttons";
+@import "bootstrap-styles/scss/transitions";
+@import "bootstrap-styles/scss/dropdown";
+// @import "bootstrap-styles/scss/button-group";
+@import "bootstrap-styles/scss/nav";
+// @import "bootstrap-styles/scss/navbar";
+@import "bootstrap-styles/scss/card";
+// @import "bootstrap-styles/scss/accordion";
+// @import "bootstrap-styles/scss/breadcrumb";
+// @import "bootstrap-styles/scss/pagination";
+// @import "bootstrap-styles/scss/badge";
+// @import "bootstrap-styles/scss/alert";
+// @import "bootstrap-styles/scss/progress";
+// @import "bootstrap-styles/scss/list-group";
+// @import "bootstrap-styles/scss/close";
+// @import "bootstrap-styles/scss/toasts";
+// @import "bootstrap-styles/scss/modal";
+// @import "bootstrap-styles/scss/tooltip";
+// @import "bootstrap-styles/scss/popover";
+// @import "bootstrap-styles/scss/carousel";
+// @import "bootstrap-styles/scss/spinners";
+// @import "bootstrap-styles/scss/offcanvas";
+// @import "bootstrap-styles/scss/placeholders";
+
+// Helpers
+@import "bootstrap-styles/scss/helpers";
+
+// Utilities
+@import "bootstrap-styles/scss/utilities/api";
+
+
+
+
+#bg1 {
+  background: url(/images/bg/bg1.jpg) no-repeat center center fixed;
+  /*transition: background 2s linear;*/
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+  opacity: 1;
+  transition: opacity 2s;
+
+  background-attachment: scroll;
+
+
+}
+
+#bg2 {
+  background: url(/images/gb/bg1.jpg) no-repeat center center fixed;
+  /*transition: background 2s linear;*/
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -3;
+  opacity: 1;
+  transition: opacity 2s;
+
+  background-attachment: scroll;
+
+
+}
+
+.bg-overlay {
+  background-color: rgba(44, 62, 80, 0.3);
+  background-image: url("/images/bg/pattern.png");
+  background-repeat: repeat;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('/images/bg/bg1.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.bg-block {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.tauko {
+  background-color: rgba(204, 204, 204, 0.5);
+}
+
+ul.rules {
+  > span {
+    margin-left: -2rem;
+  }
+}
