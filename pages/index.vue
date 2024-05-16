@@ -51,7 +51,6 @@
 
       </BCol>
     </BRow>
-    <Footer />
   </BContainer>
 </template>
 
