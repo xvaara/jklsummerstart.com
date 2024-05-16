@@ -7,13 +7,12 @@
       </video>
     </Transition>
 
-      <div id="bg1" ref="bg1">
-        <div class="bg-overlay"></div>
+      <div id="bg1" ref="bg1" :style="style1">
       </div>
     
-      <div id="bg2" ref="bg2">
-        <div class="bg-overlay"></div>
+      <div id="bg2" ref="bg2" :style="style2">
       </div>
+      <div class="bg-overlay"></div>
     
     <BContainer fluid>
       <Header :no-logo="route.meta.noLogo" />
@@ -29,31 +28,43 @@ const route = useRoute()
 const bg1 = ref(null)
 const bg2 = ref(null)
 
+const style1 = ref({
+  backgroundImage: "url(/images/bg/bg1.jpg)",
+  opacity: 1
+})
+
+const style2 = ref({
+  backgroundImage: "url(/images/bg/bg2.jpg)",
+  opacity: 0
+})
 
 var maxImage = 21
 
 var currentImage = null;
-var nextImage = Math.floor(Math.random() * maxImage) + 1;
-var currentElem = 1;
+var current = 0;
+var pics = new Array(maxImage).fill(0).map((_, i) => i + 1).sort(() => Math.random() - 0.5);
+var nextImage = pics[current];
 
 
 function changeBackgroundImage() {
-  if (route.meta.video) {
-    return;
-  }
+  // if (route.meta.video) {
+  //   return;
+  // }
   currentImage = nextImage;
-  nextImage = Math.floor(Math.random() * maxImage) + 1;
-  //console.log("changing to:", currentImage);
-  if (currentElem == 1) {
-    bg1.value.style.opacity = 0;
-    bg2.value.style.backgroundImage = "url(/images/bg/bg" + currentImage + ".jpg)";
-    bg2.value.style.opacity = 1;
-    currentElem = 2;
+  nextImage = pics[current++ % maxImage];
+  // console.log("changing:", current, current % maxImage, currentImage, nextImage);
+  if (style1.value.opacity === 1) {
+    style1.value.opacity = 0;
+    style2.value = {
+      backgroundImage: "url(/images/bg/bg" + currentImage + ".jpg)",
+      opacity: 1
+    }
   } else {
-    bg2.value.style.opacity = 0;
-    bg1.value.style.backgroundImage = "url(/images/bg/bg" + currentImage + ".jpg)";
-    bg1.value.style.opacity = 1;
-    currentElem = 1;
+    style2.value.opacity = 0;
+    style1.value = {
+      backgroundImage: "url(/images/bg/bg" + currentImage + ".jpg)",
+      opacity: 1
+    }
   }
 
 
