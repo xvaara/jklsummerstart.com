@@ -1,13 +1,16 @@
 <template>
   <div>
     Realiaikaiset tulokset ja aikataulu
+    <!-- <ResultsLegacy :data="data" v-if="data" /> -->
   </div>
-  <!-- <ResultsLegacy :data="data" v-if="data" /> -->
 </template>
 
 <script setup>
 definePageMeta({
   noLogo: true
+})
+useHead({
+  title: 'Live'
 })
 const data = ref(null);
 onMounted(() => {

@@ -204,3 +204,9 @@
 </div>
 
 </template>
+
+<script setup>
+useHead({
+  title: 'Tulokset 2016'
+})
+</script>

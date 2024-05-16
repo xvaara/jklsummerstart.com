@@ -1,8 +1,6 @@
 <template>
-   <div v-if="!props.noLogo" class="mt-3 d-flex">
-     <img src="/images/logo.png" alt="logo" class="img-fluid mx-auto"/>
-    </div>
-    <div class="mb-5 d-flex" :class="props.noLogo && 'mt-3'">
+  <div class="mt-3">
+    <div class="mb-5 d-flex" >
       <BNav class="mx-auto bg-block">
         <BNavItem to="/">Etusivu</BNavItem>
         <BNavItem to="/info">Info</BNavItem>
@@ -10,6 +8,12 @@
         <BNavItem to="/tulokset">Tulokset</BNavItem>
       </BNav>
     </div>
+    <Transition name="slide-fade">
+      <div v-if="!props.noLogo" class="d-flex logo-container">
+        <img src="/images/logo.png" alt="logo" class="img-fluid mx-auto"/>
+      </div>
+    </Transition>
+  </div>
 </template>
 <script setup>
 const props = defineProps({

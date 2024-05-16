@@ -92,7 +92,7 @@ $utilities: map-merge(
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: -2;
+  z-index: -10;
   opacity: 1;
   transition: opacity 2s;
 
@@ -110,7 +110,7 @@ $utilities: map-merge(
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: -3;
+  z-index: -10;
   opacity: 1;
   transition: opacity 2s;
 
@@ -139,7 +139,7 @@ video#bgvid {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
+  z-index: -5;
   transform: translateX(-50%) translateY(-50%);
   background: url('/images/bg/bg1.jpg') no-repeat;
   background-size: cover;
@@ -159,4 +159,59 @@ ul.rules {
   > span {
     margin-left: -2rem;
   }
+}
+
+
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: all 0.2s;
+}
+.layout-enter-from,
+.layout-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: all 0.2s;
+}
+.layout-enter-from,
+.layout-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.logo-container {
+  height: auto;
+  pointer-events: none;
+}
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+  // position: absolute;
+  max-height: 594px;
+}
+
+.slide-fade-leave-active {
+  max-height: 594px;
+  // position: absolute;
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  // transform: translateY(-400px);
+  max-height: 0px;
+  opacity: 0;
 }

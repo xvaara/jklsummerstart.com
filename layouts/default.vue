@@ -1,17 +1,26 @@
 <template>
-   <div id="bg1" ref="bg1">
-      <div class="bg-overlay">
+  <div>
+    <Transition name="page">
+      <video v-if="route.meta.video" poster="/images/bg/bg1.jpg" id="bgvid" playsinline autoplay muted loop>
+        <!-- <source src="bg-video.webm" type="video/webm"> -->
+        <source src="/images/bg-video.mp4" type="video/mp4">
+      </video>
+    </Transition>
+
+      <div id="bg1" ref="bg1">
+        <div class="bg-overlay"></div>
       </div>
-    </div>
-    <div id="bg2" ref="bg2">
-      <div class="bg-overlay">
+    
+      <div id="bg2" ref="bg2">
+        <div class="bg-overlay"></div>
       </div>
-    </div>
-  <BContainer fluid>
-    <Header :no-logo="route.meta.noLogo" />
-    <slot />
-    <Footer />
-  </BContainer>
+    
+    <BContainer fluid>
+      <Header :no-logo="route.meta.noLogo" />
+      <slot />
+      <Footer />
+    </BContainer>
+  </div>
 </template>
 <script setup>
 
@@ -29,6 +38,9 @@ var currentElem = 1;
 
 
 function changeBackgroundImage() {
+  if (route.meta.video) {
+    return;
+  }
   currentImage = nextImage;
   nextImage = Math.floor(Math.random() * maxImage) + 1;
   //console.log("changing to:", currentImage);

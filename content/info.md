@@ -1,7 +1,9 @@
+---
+title: JSS XII 2024 Info
+---
 # Welcome to JSS XII 2024!
 
 Tournament phone: +358 40 734 5892 - All questions welcome =)
-
 
 ## Tournament timeline
 

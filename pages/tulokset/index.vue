@@ -13,7 +13,9 @@
   </BContainer>
 </template>
 <script setup>
-
+useHead({
+  title: 'Tulokset'
+})
 const { data: winners, error } = await useAsyncData(`winners`, () => queryContent('winners')
   .sort({ title: -1})
   .find())

@@ -1,7 +1,6 @@
 <template>
   <BContainer>
-   <Header />
-   <h2 v-if="!!countdown" class="text-center bg-block mb-3">Turnauksen alkuun <br>{{ countdown }}</h2>
+    <h2 v-if="!!countdown" class="text-center bg-block mb-3">Turnauksen alkuun <br>{{ countdown }}</h2>
     <BRow>
       <div class="col-12 col-lg">
         <Block>
@@ -31,7 +30,9 @@
     <BRow class="my-5">
       <div class="col-12 col-lg-6">
         <Block>
-          <ContentDoc path="history" />
+          <ContentRenderer :value="history">
+              <template #empty />
+            </ContentRenderer>
         </Block>
       </div>
       <BCol class="mt-3 mt-lg-0">
@@ -56,13 +57,20 @@
 
 <script setup>
 definePageMeta({
-  layout: 'video'
+  // layout: 'video'
+  video: true
 })
 
-const { data: winners, error } = await useAsyncData(`winners`, () => queryContent('winners')
+useHead({
+  title: 'Etusivu',
+})
+
+const { data: winners } = await useAsyncData(`winners`, () => queryContent('winners')
   .sort({ title: -1})
   .limit(2)
   .find())
+
+const { data: history } = await useAsyncData(`history`, () => queryContent('history').findOne())
 
   const countdown = ref(null)
 
@@ -108,8 +116,8 @@ function showRemaining() {
   countdown.value = cd
 
 }
-showRemaining();
 onMounted(() => {
+  showRemaining();
   timer = setInterval(showRemaining, 1000);
 })
 
