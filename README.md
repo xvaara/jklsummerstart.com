@@ -7,7 +7,7 @@ Sivut käyttävät nuxt content modulia, joka mahdollistaa sivujen sisällön ki
 ## Muokkas selaimessa
 
 - Tee github tunnus
-- Tee uusi pull request stackblitzin kautta: [new pull request](https://pr.new/xvaara/summerstart.com)
+- Tee uusi pull request stackblitzin kautta: [new pull request](https://pr.new/xvaara/jklsummerstart.com)
 - Muokkaa sivuja ja tallenna muutokset
 - Tee pull request
 
@@ -24,7 +24,7 @@ Sivut käyttävät nuxt content modulia, joka mahdollistaa sivujen sisällön ki
 ## Kloonaa tämä repository
 
 ```bash
-git clone git@github.com:xvaara/summerstart.com.git
+git clone git@github.com:xvaara/jklsummerstart.com.git
 ```
 
 Asenna riippuvuudet:
