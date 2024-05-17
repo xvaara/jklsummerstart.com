@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="d-flex my-3">
-      <BDropdown type="success" class="mx-auto" :text="filterTeam || 'Joukkueet'">
+      <BDropdown type="success" class="mx-auto" :text="filterTeam || 'Valitse joukkue'">
   
         <BDropdownItem @click="teamSelect('')">Kaikki</BDropdownItem>
         <BDropdownItem v-for="xteam in teams" @click="teamSelect(xteam)">{{ xteam }}</BDropdownItem>
@@ -10,22 +10,31 @@
       <div class="row">
       
         <div class="col-12 col-lg-6">
-          <div class="bg-block p-1">
-            <div v-for="g in filteredTimetable ">
+          <div class="">
+            <div v-for="g in filteredTimetable " class="my-3 bg-block p-1">
               <h3>{{ g.name }}</h3>
   
               <table class="table table-condensed table-striped-columns" style="--bs-body-bg: transparent; --bs-emphasis-color: white;">
                 <tbody>
-  
-                  <tr v-for="row in g.rows" :class="{ tauko: row.team1 === 'TAUKO' }">
-                    <td>{{ truncate(row.weekday,2) }} <strong>{{ row.time }}</strong> <span style="white-space: nowrap;"> {{ row.field }}</span> </td>
-                    <td> {{ row.team1 }} <span v-if="row.pool1"> ({{ row.pool1 }})</span> </td>
-                    <td style="white-space: nowrap;"> <span v-if="row.score1"> {{ row.score1 }} - {{ row.score2 }} </span> </td>
-                    <td> {{ row.team2 }} <span v-if="row.pool2"> ({{ row.pool2 }})</span> </td>
-                    <td class="sshideextra">
-                      <span class="badge text-wrap bg-secondary"> {{ row.tpool }}</span>
-                    </td>
-                </tr>
+                  <template v-for="row in g.rows">
+                    <tr v-if="row.type === 'game'">
+                      <td> <strong>{{ row.time }}</strong> <span style="white-space: nowrap;"> {{ row.field }}</span> </td>
+                      <td> {{ row.team1 }} <span v-if="row.pool1"> ({{ row.pool1 }})</span> </td>
+                      <td style="white-space: nowrap;"> <span v-if="row.score1"> {{ row.score1 }} - {{ row.score2 }} </span> </td>
+                      <td> {{ row.team2 }} <span v-if="row.pool2"> ({{ row.pool2 }})</span> </td>
+                      <td class="sshideextra">
+                        <a v-if="row.link && showLink" :href="row.link">
+                          <span class="badge bg-secondary text-wrap"> {{ row.tpool }} </span>
+                        </a>
+                        <span v-else class="badge bg-secondary text-wrap"> {{ row.tpool }}</span>
+                      </td>
+                    </tr>
+                    <tr v-else-if="row.type === 'info'" class="timetable-info">
+                      <td width="20%"> <strong>{{ row.time }}</strong> <span style="white-space: nowrap;"> {{ row.place }}</span> </td>
+                      <td colspan="4"> {{ row.text }} </td>
+
+                    </tr>
+                  </template>
                 </tbody>
               </table>
             </div>
@@ -34,7 +43,7 @@
 
         </div>
         <div class="col-12 col-lg-6">
-          <div class="bg-block mb-3 p-1">
+          <div class="bg-block my-3 p-1 p-lg-3">
             <h1>Lohkot</h1>
             <div v-for="g in filteredSlots">
               <div class="mt-3">
@@ -63,7 +72,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <div class="col-sm-offset-2 col-sm-10" style="margin-bottom: 40px;" v-if="g.notes.length > 0">
+                <div class="ms-5" style="margin-bottom: 40px;" v-if="g.notes.length > 0">
                   <span v-for="n in g.notes"> {{ n }} <br></span>
                 </div>
               </div>
@@ -94,6 +103,8 @@ const props = defineProps({
 })
 
 
+const showLink = ref( window.location.search === '?link' )
+
       const timetable = ref( [])
       const teams = ref( [])
       const news = ref( [])
@@ -103,19 +114,7 @@ const props = defineProps({
       const test = ref('')
     
     
-      const fteams = computed( () => {
-        return projects.filter(function (project) {
-          return true
-        })
-      })
-    
 
-
-      function truncate(string, value) {
-        if (string.length <= value) return string;
-        if (typeof string !== 'string') return '';
-        return string.substring(0, value) + '';
-      }
 
 
     
@@ -165,7 +164,7 @@ function anyFieldMatch(row, team) {
 
 const filteredTimetable = computed(() => {
   console.log(filterTeam.value)
-  if (!filterTeam.value) return timetable.value
+  if (!filterTeam.value || filterTeam.value === 'link') return timetable.value
   return timetable.value.map((g) => {
     return {
       ...g,

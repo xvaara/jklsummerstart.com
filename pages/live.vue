@@ -1,7 +1,7 @@
 <template>
   <div>
-    Realiaikaiset tulokset ja aikataulu
-    <!-- <ResultsLegacy :data="data" v-if="data" /> -->
+    <ScheduleNext :data="data" v-if="data"/>
+    <Results :data="data" v-if="data" />
   </div>
 </template>
 
@@ -14,8 +14,9 @@ useHead({
 })
 const data = ref(null);
 onMounted(() => {
-  fetch('/data/data-2023.json')
-    .then(response => response.json())
-    .then(json => data.value = json)
+  const e = new EventSource('https://data.mhx.fi/jss-data');
+  e.onmessage = (event) => {
+    data.value = JSON.parse(event.data);
+  };
 })
 </script>

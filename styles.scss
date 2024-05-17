@@ -60,7 +60,7 @@ $utilities: map-merge(
 // @import "bootstrap-styles/scss/accordion";
 // @import "bootstrap-styles/scss/breadcrumb";
 // @import "bootstrap-styles/scss/pagination";
-// @import "bootstrap-styles/scss/badge";
+@import "bootstrap-styles/scss/badge";
 // @import "bootstrap-styles/scss/alert";
 // @import "bootstrap-styles/scss/progress";
 // @import "bootstrap-styles/scss/list-group";
@@ -151,7 +151,7 @@ video#bgvid {
   border-radius: 10px;
 }
 
-.tauko {
+.timetable-info {
   background-color: rgba(204, 204, 204, 0.5);
 }
 
