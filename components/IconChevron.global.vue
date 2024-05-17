@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import IconChevron from '~icons/bi/chevron-right';
+import IconChevron from '~icons/bi/chevron-right'
 </script>

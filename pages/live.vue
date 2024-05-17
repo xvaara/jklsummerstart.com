@@ -1,22 +1,22 @@
 <template>
   <div>
-    <ScheduleNext :data="data" v-if="data"/>
-    <Results :data="data" v-if="data" />
+    <ScheduleNext v-if="data" :data="data" />
+    <Results v-if="data" :data="data" />
   </div>
 </template>
 
 <script setup>
 definePageMeta({
-  noLogo: true
+  noLogo: true,
 })
 useHead({
-  title: 'Live'
+  title: 'Live',
 })
-const data = ref(null);
+const data = ref(null)
 onMounted(() => {
-  const e = new EventSource('https://data.mhx.fi/jss-data');
+  const e = new EventSource('https://data.mhx.fi/jss-data')
   e.onmessage = (event) => {
-    data.value = JSON.parse(event.data);
-  };
+    data.value = JSON.parse(event.data)
+  }
 })
 </script>

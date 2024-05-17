@@ -1,19 +1,17 @@
 <template>
   <div>
     <Transition name="page">
-      <video v-if="route.meta.video" poster="/images/bg/bg1.jpg" id="bgvid" playsinline autoplay muted loop>
+      <video v-if="route.meta.video" id="bgvid" poster="/images/bg/bg1.jpg" playsinline autoplay muted loop>
         <!-- <source src="bg-video.webm" type="video/webm"> -->
         <source src="/images/bg-video.mp4" type="video/mp4">
       </video>
     </Transition>
 
-      <div id="bg1" ref="bg1" :style="style1">
-      </div>
-    
-      <div id="bg2" ref="bg2" :style="style2">
-      </div>
-      <div class="bg-overlay"></div>
-    
+    <div id="bg1" ref="bg1" :style="style1" />
+
+    <div id="bg2" ref="bg2" :style="style2" />
+    <div class="bg-overlay" />
+
     <BContainer fluid>
       <Header :no-logo="route.meta.noLogo" />
       <slot />
@@ -21,69 +19,62 @@
     </BContainer>
   </div>
 </template>
-<script setup>
 
+<script setup>
 const route = useRoute()
 
 const bg1 = ref(null)
 const bg2 = ref(null)
 
 const style1 = ref({
-  backgroundImage: "url(/images/bg/bg1.jpg)",
-  opacity: 1
+  backgroundImage: 'url(/images/bg/bg1.jpg)',
+  opacity: 1,
 })
 
 const style2 = ref({
-  backgroundImage: "url(/images/bg/bg2.jpg)",
-  opacity: 0
+  backgroundImage: 'url(/images/bg/bg2.jpg)',
+  opacity: 0,
 })
 
-var maxImage = 21
+const maxImage = 21
 
-var currentImage = null;
-var current = 0;
-var pics = new Array(maxImage).fill(0).map((_, i) => i + 1).sort(() => Math.random() - 0.5);
-var nextImage = pics[current];
-
+let currentImage = null
+let current = 0
+const pics = Array.from({ length: maxImage }).fill(0).map((_, i) => i + 1).sort(() => Math.random() - 0.5)
+let nextImage = pics[current]
 
 function changeBackgroundImage() {
   // if (route.meta.video) {
   //   return;
   // }
-  currentImage = nextImage;
-  nextImage = pics[current++ % maxImage];
+  currentImage = nextImage
+  nextImage = pics[current++ % maxImage]
   // console.log("changing:", current, current % maxImage, currentImage, nextImage);
   if (style1.value.opacity === 1) {
-    style1.value.opacity = 0;
+    style1.value.opacity = 0
     style2.value = {
-      backgroundImage: "url(/images/bg/bg" + currentImage + ".jpg)",
-      opacity: 1
+      backgroundImage: `url(/images/bg/bg${currentImage}.jpg)`,
+      opacity: 1,
     }
-  } else {
-    style2.value.opacity = 0;
+  }
+  else {
+    style2.value.opacity = 0
     style1.value = {
-      backgroundImage: "url(/images/bg/bg" + currentImage + ".jpg)",
-      opacity: 1
+      backgroundImage: `url(/images/bg/bg${currentImage}.jpg)`,
+      opacity: 1,
     }
   }
 
-
-  
-    var ig = new Image();
-    ig.src = "/images/bg" + nextImage + ".jpg"
-  
-
-
+  const ig = new Image()
+  ig.src = `/images/bg${nextImage}.jpg`
 }
 let timer
 onMounted(() => {
-  changeBackgroundImage();
-  timer = setInterval(changeBackgroundImage, 5000);
+  changeBackgroundImage()
+  timer = setInterval(changeBackgroundImage, 5000)
 })
 
-onBeforeUnmount(() =>{
+onBeforeUnmount(() => {
   clearInterval(timer)
 })
-
-
 </script>

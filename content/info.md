@@ -1,6 +1,7 @@
 ---
 title: JSS XII 2024 Info
 ---
+
 # Welcome to JSS XII 2024!
 
 Tournament phone: +358 40 734 5892 - All questions welcome =)
@@ -29,7 +30,6 @@ You can register at the series you feel best suits you = ). You can also borrow 
 
 #### Spikeball, beach volley and casual get-to.gether is also happening at the beach!
 
-
 ### Saturday
 
 - ~10-16 Games @ <a href="https://goo.gl/maps/VnzFxD57VsZtzLAo9"> <b><u>Viitaniemi</u></b></a>
@@ -38,6 +38,7 @@ You can register at the series you feel best suits you = ). You can also borrow 
 - ?? Possible surprise events
 
 ### Sunday
+
 - 09:30-16:30 Games @ <a href="https://goo.gl/maps/VnzFxD57VsZtzLAo9"> <b><u>Viitaniemi</u></b></a>
 - 16:30 - Prize seremony
 
@@ -46,6 +47,7 @@ You can register at the series you feel best suits you = ). You can also borrow 
 The whatsapp group is used for quick communication by the tournament organisers, but can also be used for player to player talk.
 
 ## Side events!
+
 ### Spikeball - tournament
 
 JSS SPIKE BALL CHAMPIONSHIPS are back! Register as a pair on an individual player. Tournament organisers will do their best to pair up open players. Games for the tournament can be played at any point during the event and winners will be decided with a Power Ranking algorhitm.
