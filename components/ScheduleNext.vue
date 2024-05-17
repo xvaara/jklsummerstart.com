@@ -1,5 +1,5 @@
 <template>
-  <input v-model="now" type="datetime-local" class="form-control">
+  <input v-if="test" v-model="now" type="datetime-local" class="form-control">
   <div v-if="next" class="container-fluid">
     <h2 class="text-center">
       {{ current?.[0]?.datename }}
@@ -71,8 +71,10 @@ const props = defineProps({
 })
 
 const timetable = ref([])
-// const now = ref(new Date().toISOString().slice(0, 16))
-const now = ref('2024-05-25T11:59')
+const now = ref(new Date().toISOString().slice(0, 16))
+// const now = ref('2024-05-25T11:59')
+
+const test = ref(window.location.search.includes('link'))
 
 watch(props, () => {
   timetable.value = props.data.timetable.map((d) => {
