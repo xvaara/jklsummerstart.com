@@ -16,7 +16,7 @@ Barbeque - Some food provided my JSW, if you want to eat a full meal you should 
 
 #### JSS Disc Golf battle at Seppälankangas Disc Golf Course. You can play your round at any point before Sunday 12:00!
 
-We compete in three different series, all them with their own prizes. To participate you can play your round at the course and report your score to Ilari.
+We compete in five different series, all them with their own prizes. To participate you can play your round at the course and report your score to Ilari.
 
 The series are:
 
@@ -26,7 +26,7 @@ Singles
 - Semi-Pro - You know what you are doing
 
 Pairs (Best shot)
-- Pairs Casual (Both of you are less experienced)
+- Pairs Casual (Both of you are fairly new, scoring well over par on most holes)
 - Pairs Pro (at least one of you has a chance to birdie holes)
 
 You can register at the series you feel best suits you = ). You can also borrow discs at the Tuomiojärvi Beach.
@@ -39,8 +39,8 @@ You can register at the series you feel best suits you = ). You can also borrow 
 
 - ~10-16 Games @ <a href="https://goo.gl/maps/VnzFxD57VsZtzLAo9"> <b><u>Viitaniemi</u></b></a>
 - 16:30-18:30 Dinner @ <a href="https://goo.gl/maps/67MNv3uasNo7pg3W8"><b><u>Lozzi</u></b></a>
-- 16:00-23:30 Sauna (K18!)  @<a href="https://goo.gl/maps/esKUTGMBVRGrSaYv7"><b><u>Kielo</u></b></a>
-- 16:00-23:30 Sauna (Junior Friendly!) @<a href="https://maps.app.goo.gl/dRoKXiZSisZi4XHG9"><b><u>Opinkivi</u></b></a>
+- 16:00-23:30 Sauna (K18!) Saunas warm 19-23  @<a href="https://goo.gl/maps/esKUTGMBVRGrSaYv7"><b><u>Kielo</u></b></a>
+- 16:00-23:30 Sauna (Junior Friendly!) Saunas warm 18-23 @<a href="https://maps.app.goo.gl/dRoKXiZSisZi4XHG9"><b><u>Opinkivi</u></b></a>
 - ?? Possible surprise events
 
 ### Sunday
