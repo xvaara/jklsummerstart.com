@@ -20,7 +20,7 @@
                     </td>
                     <td> {{ row.team2 }} <span v-if="row.pool2"> ({{ row.pool2 }})</span> </td>
                     <td class="">
-                      <span class="d-none d-lg-inline-block badge bg-secondary text-wrap"> {{ row.tpool }}</span>
+                      <span class="d-none d-lg-inline-block badge bg-secondary text-wrap">#{{ row.num }} {{ row.pool }}</span>
                     </td>
                   </tr>
                   <tr v-else-if="row.type === 'info'" :key="row.time" class="timetable-info">
@@ -37,12 +37,12 @@
                     <td colspan="5">
                       <div class="d-flex justify-content-center">
                         <span class="d-none d-lg-inline-block bg-secondary text-wrap px-3 py-1 rounded mx-3 fs-3">
-                          {{ row.tpool }}
+                          #{{ row.num }} {{ row.pool }}
                         </span>
                         <span class="fs-3">{{ row.team1 }} - {{ row.team2 }}</span>
                       </div>
 
-                      <iframe :src="`${row.link}&embedded=true`" width="100%" height="900px" onload="resizeIframe(this)" />
+                      <iframe :src="`${meta.submit}%23${row.num}&embedded=true`" width="100%" height="900px" />
                     </td>
                   </tr>
                 </template>
@@ -60,28 +60,16 @@ const props = defineProps({
   data: Object,
 })
 
-const showLink = ref(window.location.search === '?link')
-
 const timetable = ref([])
-const teams = ref([])
+const meta = ref({})
 const showAll = ref(false)
-const rules = ref([])
 const selected = ref(null)
-
-globalThis.resizeIframe = (obj) => {
-  console.log('o', obj.contentWindow.window)
-  obj.addEventListener('message', (e) => {
-    console.log('e', e)
-  })
-  globalThis.obj = obj
-  // obj.style.height = `${obj.contentWindow.document.body.scrollHeight}px`
-}
 
 watch(props, () => {
   // console.log(filterTeam.value)
   // console.log(props.data)
-  teams.value = [...props.data.teams].sort()
   timetable.value = props.data.timetable
+  meta.value = props.data.meta
 }, { immediate: true })
 
 // created: function () {

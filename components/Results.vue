@@ -27,7 +27,7 @@
                     </td>
                     <td> {{ row.team2 }} <span v-if="row.pool2"> ({{ row.pool2 }})</span> </td>
                     <td class="">
-                      <span class="d-none d-lg-inline-block badge bg-secondary text-wrap"> {{ row.tpool }}</span>
+                      <span class="d-none d-lg-inline-block badge bg-secondary text-wrap"> {{ row.pool }}</span>
                     </td>
                   </tr>
                   <tr v-else-if="row.type === 'info'" :key="row.time" class="timetable-info">
