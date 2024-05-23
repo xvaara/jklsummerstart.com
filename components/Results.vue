@@ -132,7 +132,7 @@ watch(props, () => {
 }, { immediate: true })
 
 function teamSelect(team) {
-  console.log(team)
+  // console.log(team)
   filterTeam.value = team
   history.pushState(null, null, `?${team}`)
 }
@@ -154,7 +154,7 @@ function teamSelect(team) {
 
 function anyFieldMatch(row, team) {
   for (const key in row) {
-    console.log(row[key], key, team)
+    // console.log(row[key], key, team)
     if (typeof row[key] !== 'string')
       continue
     if (row[key].includes(team))
@@ -164,7 +164,7 @@ function anyFieldMatch(row, team) {
 }
 
 const filteredTimetable = computed(() => {
-  console.log(filterTeam.value)
+  // console.log(filterTeam.value)
   if (!filterTeam.value || filterTeam.value === 'link')
     return timetable.value
   return timetable.value.map((g) => {
