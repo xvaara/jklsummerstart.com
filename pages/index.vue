@@ -1,8 +1,13 @@
 <template>
   <BContainer>
     <h2 v-if="!!countdown" class="text-center bg-block mb-3">
-      Turnauksen alkuun <br>{{ countdown }}
+      Pelien alkuun <br>{{ countdown }}
     </h2>
+    <div class="text-center bg-block mb-3">
+      <NuxtLink to="/live" class="btn btn-primary btn-lg mx-5 my-3">
+        Aikataulut ja tulosseuranta <IconChevron />
+      </NuxtLink>
+    </div>
     <BRow>
       <div class="col-12 col-lg">
         <Block>
@@ -77,7 +82,7 @@ const { data: history } = await useAsyncData(`history`, () => queryContent('hist
 const countdown = ref(null)
 
 // 24.05.2024 klo 16
-const end = new Date('05/24/2024 4:00 PM')
+const end = new Date('05/25/2024 10:00 PM')
 
 const _second = 1000
 const _minute = _second * 60
