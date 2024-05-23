@@ -67,22 +67,22 @@
                     </td>
 
                     <td v-if="row.c === 'XXXX'" style="background-color: rgba(204,204,204,0.5);" />
-                    <td v-else>
+                    <td v-else-if="g.rows[0].c">
                       {{ row.c }}
                     </td>
 
                     <td v-if="row.d === 'XXXX'" style="background-color: rgba(204,204,204,0.5);" />
-                    <td v-else-if="row.d">
+                    <td v-else-if="g.rows[0].d">
                       {{ row.d }}
                     </td>
 
                     <td v-if="row.e === 'XXXX'" style="background-color: rgba(204,204,204,0.5);" />
-                    <td v-else-if="row.e">
+                    <td v-else-if="g.rows[0].e">
                       {{ row.e }}
                     </td>
 
                     <td v-if="row.f === 'XXXX'" style="background-color: rgba(204,204,204,0.5);" />
-                    <td v-else-if="row.f">
+                    <td v-else-if="g.rows[0].f">
                       {{ row.f }}
                     </td>
                   </tr>
@@ -181,7 +181,7 @@ const filteredTimetable = computed(() => {
 })
 
 const filteredSlots = computed(() => {
-  if (!filterTeam.value)
+  if (!filterTeam.value || filterTeam.value === 'link')
     return slots.value
   return slots.value.filter((slot) => {
     return slot.rows.some((row) => {
