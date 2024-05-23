@@ -8,7 +8,9 @@
         <BNavItem to="/info">
           Info
         </BNavItem>
-        <!-- <BNavItem to="/live">Live</BNavItem> -->
+        <BNavItem to="/live">
+          Live
+        </BNavItem>
         <BNavItem to="/tulokset">
           Tulokset
         </BNavItem>
