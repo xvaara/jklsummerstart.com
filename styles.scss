@@ -63,7 +63,7 @@ $utilities: map-merge(
 @import 'bootstrap-styles/scss/containers';
 @import 'bootstrap-styles/scss/grid';
 @import 'bootstrap-styles/scss/tables';
-// @import "bootstrap-styles/scss/forms";
+@import "bootstrap-styles/scss/forms";
 @import 'bootstrap-styles/scss/buttons';
 @import 'bootstrap-styles/scss/transitions';
 @import 'bootstrap-styles/scss/dropdown';
@@ -234,4 +234,8 @@ ul.rules {
   // transform: translateY(-400px);
   max-height: 0px;
   opacity: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

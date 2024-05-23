@@ -22,15 +22,12 @@
                   <tr v-if="row.type === 'game'" :key="row.tpool">
                     <td> <strong>{{ row.time }}</strong> <span style="white-space: nowrap;"> {{ row.field }}</span> </td>
                     <td> {{ row.team1 }} <span v-if="row.pool1"> ({{ row.pool1 }})</span> </td>
-                    <td style="white-space: nowrap;">
+                    <td style="white-space: nowrap; text-align: center;">
                       <span v-if="row.score1"> {{ row.score1 }} - {{ row.score2 }} </span>
                     </td>
                     <td> {{ row.team2 }} <span v-if="row.pool2"> ({{ row.pool2 }})</span> </td>
-                    <td class="sshideextra">
-                      <a v-if="row.link && showLink" :href="row.link">
-                        <span class="badge bg-secondary text-wrap"> {{ row.tpool }} </span>
-                      </a>
-                      <span v-else class="badge bg-secondary text-wrap"> {{ row.tpool }}</span>
+                    <td class="">
+                      <span class="d-none d-lg-inline-block badge bg-secondary text-wrap"> {{ row.tpool }}</span>
                     </td>
                   </tr>
                   <tr v-else-if="row.type === 'info'" :key="row.time" class="timetable-info">
@@ -115,7 +112,7 @@ const props = defineProps({
   data: Object,
 })
 
-const showLink = ref(window.location.search === '?link')
+// const showLink = ref(window.location.search === '?link')
 
 const timetable = ref([])
 const teams = ref([])
