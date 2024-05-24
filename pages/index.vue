@@ -13,7 +13,7 @@
         <Block>
           <ContentDoc path="welcome" />
         </Block>
-        <Block class="mt-3">
+        <!-- <Block class="mt-3">
           <h2>Ilmoittautuminen</h2>
           <a href="https://forms.gle/zViL9sVBAKKF9GvA7" class="btn btn-primary btn-lg mx-5 d-block my-3" target="_blank">
             Joukkueilmoittautuminen <IconChevron />
@@ -22,7 +22,7 @@
           <a href="https://forms.gle/zJZrgPNWqhi39Are6" class="btn btn-primary btn-lg mx-5 d-block my-3" target="_blank">
             Pelaajailmoittautuminen<IconChevron />
           </a>
-        </Block>
+        </Block> -->
         <Block class="mt-3">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.794740781158!2d25.731889116705585!3d62.248744082773776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46857439493f3dcf%3A0x831a9d6951556837!2sViitaniemen+kentt%C3%A4!5e0!3m2!1sfi!2sfi!4v1453467822468"
