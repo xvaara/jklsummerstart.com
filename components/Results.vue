@@ -1,59 +1,62 @@
 <template>
-  <div class="container-fluid">
-    <div class="d-flex my-3">
-      <BDropdown type="success" class="mx-auto" :text="filterTeam || 'Valitse joukkue'">
-        <BDropdownItem @click="teamSelect('')">
-          Kaikki
-        </BDropdownItem>
-        <BDropdownItem v-for="xteam in teams" :key="xteam" @click="teamSelect(xteam)">
-          {{ xteam }}
-        </BDropdownItem>
-      </BDropdown>
-    </div>
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="">
-          <div v-for="g in filteredTimetable " :key="g.name" class="my-3 bg-block p-1">
-            <h3>{{ g.name }}</h3>
+  <div class="d-flex my-3">
+    <BDropdown type="success" class="mx-auto" :text="filterTeam || 'Valitse joukkue'">
+      <BDropdownItem @click="teamSelect('')">
+        Kaikki
+      </BDropdownItem>
+      <BDropdownItem v-for="xteam in teams" :key="xteam" @click="teamSelect(xteam)">
+        {{ xteam }}
+      </BDropdownItem>
+    </BDropdown>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div v-for="g in filteredTimetable " :key="g.name" class="my-3 bg-block p-1">
+        <h3>{{ g.name }}</h3>
 
-            <table class="table table-condensed table-striped-columns" style="--bs-body-bg: transparent; --bs-emphasis-color: white;">
-              <tbody>
-                <template v-for="row in g.rows">
-                  <tr v-if="row.type === 'game'" :key="row.tpool">
-                    <td> <strong>{{ row.time }}</strong> <span style="white-space: nowrap;"> {{ row.field }}</span> </td>
-                    <td> {{ row.team1 }} <span v-if="row.pool1"> ({{ row.pool1 }})</span> </td>
-                    <td style="white-space: nowrap; text-align: center;">
-                      <span v-if="row.score1"> {{ row.score1 }} - {{ row.score2 }} </span>
-                    </td>
-                    <td> {{ row.team2 }} <span v-if="row.pool2"> ({{ row.pool2 }})</span> </td>
-                    <td class="">
-                      <span class="d-none d-lg-inline-block badge bg-secondary text-wrap"> {{ row.pool }}</span>
-                    </td>
-                  </tr>
-                  <tr v-else-if="row.type === 'info'" :key="row.time" class="timetable-info">
-                    <td width="20%">
-                      <strong>{{ row.time }}</strong> <span style="white-space: nowrap;"> {{ row.place }}</span>
-                    </td>
-                    <td colspan="4">
-                      <span class="info-text">
-                        {{ row.text }}
-                      </span>
-                    </td>
-                  </tr>
-                </template>
-              </tbody>
-            </table>
-          </div>
-        </div>
+        <table class="table table-condensed table-striped-columns w-100 table-sm timetable" style="--bs-body-bg: transparent; --bs-emphasis-color: white;">
+          <tbody>
+            <template v-for="row in g.rows">
+              <tr v-if="row.type === 'game'" :key="row.tpool">
+                <th>
+                  <span class="fw-bold">{{ row.time }} </span> <span style="white-space: nowrap;"> {{ row.field }}</span>
+                </th>
+                <td class="teamname">
+                  {{ row.team1 }} <span v-if="row.pool1"> ({{ row.pool1 }})</span>
+                </td>
+                <td style="white-space: nowrap; text-align: center;">
+                  <span v-if="row.score1"> {{ row.score1 }} - {{ row.score2 }} </span>
+                </td>
+                <td class="teamname">
+                  {{ row.team2 }} <span v-if="row.pool2"> ({{ row.pool2 }})</span>
+                </td>
+                <td class="d-none d-lg-inline-block">
+                  <span class="badge bg-secondary text-wrap"> {{ row.pool }}</span>
+                </td>
+              </tr>
+              <tr v-else-if="row.type === 'info'" :key="row.time" class="timetable-info">
+                <th>
+                  <span class="fw-bold">{{ row.time }}</span> <span> {{ row.place }}</span>
+                </th>
+                <td colspan="4">
+                  <span class="info-text">
+                    {{ row.text }}
+                  </span>
+                </td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
       </div>
-      <div class="col-12 col-lg-6">
-        <div class="bg-block my-3 p-1 p-lg-3">
-          <h1>Lohkot</h1>
-          <div v-for="g in filteredSlots" :key="g.name">
-            <div class="mt-3">
-              <h3>{{ g.name }}</h3>
-
-              <table class="table table-bordered" style="--bs-body-bg: transparent; --bs-emphasis-color: white;">
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="bg-block my-3 p-1 p-lg-3">
+        <h1>Lohkot</h1>
+        <div v-for="g in filteredSlots" :key="g.name">
+          <div class="mt-3">
+            <h3>{{ g.name }}</h3>
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm slots" style="--bs-body-bg: transparent; --bs-emphasis-color: white;">
                 <tbody class="">
                   <tr v-for="row in g.rows" :key="g.name + row.a">
                     <td> {{ row.a }} </td>
@@ -85,23 +88,23 @@
                   </tr>
                 </tbody>
               </table>
-              <div v-if="g.notes.length > 0" class="ms-5" style="margin-bottom: 40px;">
-                <span v-for="n in g.notes" :key="n"> {{ n }} <br></span>
-              </div>
+            </div>
+            <div v-if="g.notes.length > 0" class="ms-5" style="margin-bottom: 40px;">
+              <span v-for="n in g.notes" :key="n"> {{ n }} <br></span>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="bg-block p-3">
-          <template v-for="(r, i) in rules">
-            <ul v-if="r[0] === 'li'" :key="i" class="rules mb-0">
-              <li v-html="r[1]" />
-            </ul>
-            <template v-else>
-              <component :is="r[0] || 'span'" :key="i" v-html="r[1]" /><br :key="i">
-            </template>
+      <div class="bg-block p-3">
+        <template v-for="(r, i) in rules">
+          <ul v-if="r[0] === 'li'" :key="i" class="rules mb-0">
+            <li v-html="r[1]" />
+          </ul>
+          <template v-else>
+            <component :is="r[0] || 'span'" :key="i" v-html="r[1]" /><br :key="i">
           </template>
-        </div>
+        </template>
       </div>
     </div>
   </div>
@@ -187,3 +190,23 @@ const filteredSlots = computed(() => {
   })
 })
 </script>
+
+<style scoped>
+td.teamname {
+  word-break: break-word;
+}
+.slots td {
+  word-break: break-word;
+  width: 20%;
+}
+@media screen and (max-width: 568px) {
+  .timetable th {
+    width: 0;
+  }
+}
+@media screen and (min-width: 568px) {
+  .timetable th {
+    width: auto;
+  }
+}
+</style>

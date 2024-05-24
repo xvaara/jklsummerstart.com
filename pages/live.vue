@@ -1,23 +1,21 @@
 <template>
-  <div>
-    <ScheduleNext v-if="data" :data="data" />
-    <div class="container">
-      <div class="d-flex justify-content-center">
-        <div ref="weatherContainer" class="bg-block" style="width: min(100%, 829px);">
-          <!-- <iframe ref="weather" src="/api/weather" width="100%" :height="weatherHeight" frameborder="0" @load="fixIframe" /> -->
-          <iframe ref="weather" width="100%" src="about:blank" :height="weatherHeight" frameborder="0" @load="fixIframe" />
-        </div>
-        <div>
-          <!-- <img
+  <ScheduleNext v-if="data" :data="data" />
+
+  <div class="d-flex justify-content-center">
+    <div ref="weatherContainer" class="bg-block" style="width: min(100%, 829px);">
+      <!-- <iframe ref="weather" src="/api/weather" width="100%" :height="weatherHeight" frameborder="0" @load="fixIframe" /> -->
+      <iframe ref="weather" width="100%" src="about:blank" :height="weatherHeight" frameborder="0" @load="fixIframe" />
+    </div>
+    <div>
+      <!-- <img
             ref="weatherImage" :src="img" class="svgobj emb" style="height: 300px;"
           > -->
-          <!-- <img ref="weatherImage" class="svgobj emb" src="/api/weatherimage"> -->
-          <!-- <object ref="weatherImage" class="svgobj emb" type="image/svg+xml" data="/api/weatherimage" /> -->
-        </div>
-      </div>
+      <!-- <img ref="weatherImage" class="svgobj emb" src="/api/weatherimage"> -->
+      <!-- <object ref="weatherImage" class="svgobj emb" type="image/svg+xml" data="/api/weatherimage" /> -->
     </div>
-    <Results v-if="data" :data="data" />
   </div>
+
+  <Results v-if="data" :data="data" />
 </template>
 
 <script setup>
