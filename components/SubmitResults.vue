@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="">
     <BFormCheckbox v-model="showAll" switch>
       Näytä kaikki
     </BFormCheckbox>
@@ -13,14 +13,18 @@
               <tbody>
                 <template v-for="row in g.rows">
                   <tr v-if="row.type === 'game'" :key="row.tpool" class="cursor-pointer" @click="selectGame(row)">
-                    <td> <strong>{{ row.time }}</strong> <span style="white-space: nowrap;"> {{ row.field }}</span> </td>
-                    <td> {{ row.team1 }} <span v-if="row.pool1"> ({{ row.pool1 }})</span> </td>
+                    <th> <strong>{{ row.time }}</strong> <span style="white-space: nowrap;"> {{ row.field }}</span> </th>
+                    <td class="teamname">
+                      {{ row.team1 }} <span v-if="row.pool1"> ({{ row.pool1 }})</span>
+                    </td>
                     <td style="white-space: nowrap; text-align: center;">
                       <span v-if="row.score1"> {{ row.score1 }} - {{ row.score2 }} </span>
                     </td>
-                    <td> {{ row.team2 }} <span v-if="row.pool2"> ({{ row.pool2 }})</span> </td>
-                    <td class="">
-                      <span class="d-none d-lg-inline-block badge bg-secondary text-wrap">#{{ row.num }} {{ row.pool }}</span>
+                    <td class="teamname">
+                      {{ row.team2 }} <span v-if="row.pool2"> ({{ row.pool2 }})</span>
+                    </td>
+                    <td class="d-none d-lg-inline-block">
+                      <span class="badge bg-secondary text-wrap">#{{ row.num }} {{ row.pool }}</span>
                     </td>
                   </tr>
                   <tr v-else-if="row.type === 'info'" :key="row.time" class="timetable-info">
@@ -36,7 +40,7 @@
                   <tr v-if="row === selected" :key="`${row.tpool}form`">
                     <td colspan="5">
                       <div class="d-flex justify-content-center">
-                        <span class="d-none d-lg-inline-block bg-secondary text-wrap px-3 py-1 rounded mx-3 fs-3">
+                        <span class="bg-secondary text-wrap px-3 py-1 rounded mx-3 fs-3">
                           #{{ row.num }} {{ row.pool }}
                         </span>
                         <span class="fs-3">{{ row.team1 }} - {{ row.team2 }}</span>

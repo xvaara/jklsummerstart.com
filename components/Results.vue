@@ -190,23 +190,3 @@ const filteredSlots = computed(() => {
   })
 })
 </script>
-
-<style scoped>
-td.teamname {
-  word-break: break-word;
-}
-.slots td {
-  word-break: break-word;
-  width: 20%;
-}
-@media screen and (max-width: 568px) {
-  .timetable th {
-    width: 0;
-  }
-}
-@media screen and (min-width: 568px) {
-  .timetable th {
-    width: auto;
-  }
-}
-</style>
