@@ -58,6 +58,11 @@ The whatsapp group is used for quick communication by the tournament organisers,
 
 JSS SPIKE BALL CHAMPIONSHIPS are back! Register as a pair on an individual player. Tournament organisers will do their best to pair up open players. Games for the tournament can be played at any point during the event and winners will be decided with a Power Ranking algorhitm.
 
+SpikeBall™ games are not scheduled, but teams can play during the weekend (till Sun 14.00) according their ultimate game schedule.
+ <a href=https://chat.whatsapp.com/ElrXisf1gadJpalGj23FGK><b><u>SPIKE BALL WHATSAPP GROUP</u></b></a>\
+
+Any questions regarding SpikeBall™? Ask via the group or contact Elisa (+358 400 126 971) from Kätyrit team.
+
 <a href="https://forms.gle/wE6buhQPbQqXtu857"><b><u>Register here!</u></b></a>\
 <a href="https://www.roundnet.fi/pelisaannot/"><b><u>General Spikeball rules here, more information about JSS rules later</u></b></a>
 
