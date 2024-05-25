@@ -72,6 +72,13 @@ const props = defineProps({
 
 const timetable = ref([])
 const now = ref(new Date())
+setInterval(() => {
+  // console.log('check', now.value)
+  if (now.value.getTime() + 60000 < new Date().getTime()) {
+    // console.log('now', now.value)
+    now.value = new Date()
+  }
+}, 1000)
 // const now = ref('2024-05-25T11:59')
 
 const test = ref(window.location.search.includes('link'))
