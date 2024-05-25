@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <BFormCheckbox v-model="showAll" switch>
       Näytä kaikki
     </BFormCheckbox>
