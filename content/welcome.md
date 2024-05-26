@@ -4,7 +4,8 @@ title: JSS XII 2024
 
 # JSS XII
 
-JSS vol. XII järjestetään pe-su 24.-26.05.2024.
+JSS vol. XII järjestettiin pe-su 24.-26.05.2024.
+Kiitos kaikille osallistumisesta, ensi vuonna uudestaan!
 
 ## Turnaus
 
