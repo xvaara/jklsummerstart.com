@@ -3,11 +3,11 @@
     <h2 v-if="!!countdown" class="text-center bg-block mb-3">
       Pelien alkuun <br>{{ countdown }}
     </h2>
-    <div class="text-center bg-block mb-3">
+    <!-- <div class="text-center bg-block mb-3">
       <NuxtLink to="/live" class="btn btn-primary btn-lg mx-5 my-3">
         Aikataulut ja tulosseuranta <IconChevron />
       </NuxtLink>
-    </div>
+    </div> -->
     <BRow>
       <div class="col-12 col-lg">
         <Block>

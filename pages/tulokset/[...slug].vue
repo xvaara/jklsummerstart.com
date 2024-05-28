@@ -13,7 +13,8 @@
       <template #not-found />
     </ContentDoc>
 
-    <ResultsLegacy v-if="data" :data="data" />
+    <ResultsLegacy v-if="year <= 2023 && data" :data="data" />
+    <Results v-if="year > 2023 && data" :data="data" />
   </div>
 </template>
 

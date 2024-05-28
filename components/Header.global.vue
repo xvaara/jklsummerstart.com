@@ -5,12 +5,12 @@
         <BNavItem to="/">
           Etusivu
         </BNavItem>
-        <BNavItem to="/info">
+        <!-- <BNavItem to="/info">
           Info
         </BNavItem>
         <BNavItem to="/live">
           Live
-        </BNavItem>
+        </BNavItem> -->
         <BNavItem to="/tulokset">
           Tulokset
         </BNavItem>
