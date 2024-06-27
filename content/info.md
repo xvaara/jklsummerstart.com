@@ -48,7 +48,7 @@ You can register at the series you feel best suits you = ). You can also borrow 
 - 09:30-16:30 Games @ <a href="https://goo.gl/maps/VnzFxD57VsZtzLAo9"> <b><u>Viitaniemi</u></b></a>
 - 16:30 - Prize seremony
 
-## <a href="https://chat.whatsapp.com/IjXxGrncVuh64c70eGomZQ"><b><u>Whatsapp-link</u></b></a>
+WA LINK Removed
 
 The whatsapp group is used for quick communication by the tournament organisers, but can also be used for player to player talk.
 
@@ -59,9 +59,9 @@ The whatsapp group is used for quick communication by the tournament organisers,
 JSS SPIKE BALL CHAMPIONSHIPS are back! Register as a pair on an individual player. Tournament organisers will do their best to pair up open players. Games for the tournament can be played at any point during the event and winners will be decided with a Power Ranking algorhitm.
 
 SpikeBall™ games are not scheduled, but teams can play during the weekend (till Sun 14.00) according their ultimate game schedule.
- <a href=https://chat.whatsapp.com/ElrXisf1gadJpalGj23FGK><b><u>SPIKE BALL WHATSAPP GROUP</u></b></a>\
-
-Any questions regarding SpikeBall™? Ask via the group or contact Elisa (+358 400 126 971) from Kätyrit team.
+ LINK REMOVED!
+ 
+ Any questions regarding SpikeBall™? Ask via the group or contact Elisa (+358 400 126 971) from Kätyrit team.
 
 <a href="https://forms.gle/wE6buhQPbQqXtu857"><b><u>Register here!</u></b></a>\
 <a href="https://www.roundnet.fi/pelisaannot/"><b><u>General Spikeball rules here, more information about JSS rules later</u></b></a>
