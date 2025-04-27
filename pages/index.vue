@@ -24,10 +24,12 @@
           </a>
         </Block> -->
         <Block class="mt-3">
-          <iframe
+          <!-- viitaniemi <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.794740781158!2d25.731889116705585!3d62.248744082773776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46857439493f3dcf%3A0x831a9d6951556837!2sViitaniemen+kentt%C3%A4!5e0!3m2!1sfi!2sfi!4v1453467822468"
             width="100%" height="350" frameborder="0" style="border:0" allowfullscreen
-          />
+          /> -->
+          <!-- vehkalahti -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.9172337054943!2d25.716471478270865!3d62.24675637615633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4685743a9cbef327%3A0x48b6ec85be8e22dd!2sVehkalammen%20kentt%C3%A4!5e0!3m2!1sen!2sfi!4v1745760370473!5m2!1sen!2sfi" width="350" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
         </Block>
       </div>
       <div class="col col-lg-6 mt-3 mt-lg-0">
