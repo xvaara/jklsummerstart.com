@@ -24,7 +24,7 @@ const year = computed(() => path.split('/')[2])
 useHead({
   title: `Tulokset ${year.value}`,
 })
-const { data: resultsDoc } = await useAsyncData(`results-${path}`, () => queryContent(path).findOne())
+// const { data: resultsDoc } = await useAsyncData(`results-${path}`, () => queryContent(path).findOne())
 
 const data = ref(null)
 onMounted(() => {
