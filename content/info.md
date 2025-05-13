@@ -5,18 +5,26 @@ title: JSS XIII 2025 Info
 # Welcome to JSS XIII 2025!
 
 Tournament phone: +358 40 734 5892 - All questions welcome =)
+[Team registration:](https://forms.gle/Ay2V6mdgXro7LTTH8)
+[Individual player registration](https://forms.gle/GxmKnri1HLv1Uqau8)
 
 ## Tournament timeline
 
+
 ### Friday
+
 
 #### 16 o'clock --> Pretournament event at <a href="https://goo.gl/maps/DFCAioRM6VsbvX8JA"><b><u>Tuomiojärvi Beach</u></b></a>
 
+
 Barbeque - Some food provided by JSW, if you want to eat a full meal you should also bring something yourself = )
+
 
 #### JSS Disc Golf battle at Seppälankangas Disc Golf Course. You can play your round at any point before Sunday 12:00!
 
+
 We compete in five different series, all them with their own prizes. To participate you can play your round at the course and report your score to Ilari.
+
 
 The series are:
 
