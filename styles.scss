@@ -259,3 +259,18 @@ td.teamname {
   }
 }
 
+.logo {
+  transition: all 0.3s ease-out;
+  min-width: 200px;
+}
+.logo-large {
+  width: 65vw;
+}
+.logo-small {
+  width: 25vw;
+}
+
+.nav {
+  --bs-nav-link-font-size: 1.1rem;
+  --bs-nav-link-font-weight: 500;
+}

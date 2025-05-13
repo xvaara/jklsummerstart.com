@@ -22,7 +22,7 @@
     <!-- foo -->
 
     <BContainer fluid>
-      <Header :no-logo="route.meta.noLogo" />
+      <Header :no-logo="route.meta.noLogo" :large-logo="route.meta.largeLogo" />
       <slot />
       <Footer />
     </BContainer>

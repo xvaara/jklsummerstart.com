@@ -68,13 +68,14 @@
 definePageMeta({
   // layout: 'video'
   video: true,
+  largeLogo: true,
 })
 
 useHead({
   title: 'Etusivu',
 })
 
-const { data: winners } = await useAsyncData(`winners`, () => queryCollection('content')
+const { data: winners } = await useAsyncData(`winners-front`, () => queryCollection('content')
   .where('path', 'LIKE', '/winners/%')
   .order('title', 'DESC')
   .limit(2)
