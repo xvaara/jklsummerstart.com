@@ -8,11 +8,17 @@
     </Transition>
 
     <!-- foo -->
-    <div id="bg1" ref="bg1" :style="style1" />
+    <div id="bg1" ref="bg1" :style="style1">
+&nbsp;
+    </div>
     <!-- foo -->
-    <div id="bg2" ref="bg2" :style="style2" />
+    <div id="bg2" ref="bg2" :style="style2">
+&nbsp;
+    </div>
     <!-- foo -->
-    <div class="bg-overlay" />
+    <div class="bg-overlay">
+&nbsp;
+    </div>
     <!-- foo -->
 
     <BContainer fluid>
