@@ -5,10 +5,10 @@
         <BNavItem to="/">
           Etusivu
         </BNavItem>
-        <!-- <BNavItem to="/info">
-          Info
+        <BNavItem to="/info">
+          Info 2025
         </BNavItem>
-        <BNavItem to="/live">
+        <!-- <BNavItem to="/live">
           Live
         </BNavItem> -->
         <BNavItem to="/tulokset">

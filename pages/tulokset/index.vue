@@ -4,7 +4,7 @@
       <h2 id="tulokset">
         Tulokset
       </h2>
-      <div v-for="winner in winners">
+      <div v-for="winner in winners" :key="winner.title">
         <h6>{{ winner.title }}</h6>
         <ContentRenderer :value="winner">
           <template #empty />
@@ -18,7 +18,9 @@
 useHead({
   title: 'Tulokset',
 })
-const { data: winners, error } = await useAsyncData(`winners`, () => queryContent('winners')
-  .sort({ title: -1 })
-  .find())
+
+const { data: winners } = await useAsyncData(`winners`, () => queryCollection('content')
+  .where('path', 'LIKE', '/winners/%')
+  .order('title', 'DESC')
+  .all())
 </script>

@@ -7,10 +7,13 @@
       </video>
     </Transition>
 
+    <!-- foo -->
     <div id="bg1" ref="bg1" :style="style1" />
-
+    <!-- foo -->
     <div id="bg2" ref="bg2" :style="style2" />
+    <!-- foo -->
     <div class="bg-overlay" />
+    <!-- foo -->
 
     <BContainer fluid>
       <Header :no-logo="route.meta.noLogo" />

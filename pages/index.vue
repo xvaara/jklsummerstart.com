@@ -11,7 +11,7 @@
     <BRow>
       <div class="col-12 col-lg">
         <Block>
-          <ContentDoc path="welcome" />
+          <ContentRenderer v-if="welcome" :value="welcome" />
         </Block>
         <!-- <Block class="mt-3">
           <h2>Ilmoittautuminen</h2>
@@ -49,7 +49,7 @@
           <h2 id="tulokset">
             Viimeisimmät voittajat
           </h2>
-          <div v-for="winner in winners">
+          <div v-for="winner in winners" :key="winner.title">
             <h6>{{ winner.title }}</h6>
             <ContentRenderer :value="winner">
               <template #empty />
@@ -74,12 +74,13 @@ useHead({
   title: 'Etusivu',
 })
 
-const { data: winners } = await useAsyncData(`winners`, () => queryContent('winners')
-  .sort({ title: -1 })
+const { data: winners } = await useAsyncData(`winners`, () => queryCollection('content')
+  .where('path', 'LIKE', '/winners/%')
+  .order('title', 'DESC')
   .limit(2)
-  .find())
+  .all())
 
-const { data: history } = await useAsyncData(`history`, () => queryContent('history').findOne())
+const { data: history } = await useAsyncData(`history`, () => queryCollection('content').path('/history').first())
 
 const countdown = ref(null)
 
@@ -127,4 +128,6 @@ onMounted(() => {
   showRemaining()
   timer = setInterval(showRemaining, 1000)
 })
+
+const { data: welcome } = await useAsyncData(`welcome`, () => queryCollection('content').path('/welcome').first())
 </script>

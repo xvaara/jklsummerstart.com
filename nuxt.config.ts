@@ -9,8 +9,16 @@ export default defineNuxtConfig({
   ],
   css: ['~/styles.scss'],
   content: {
-    highlight: false,
-    markdown: {
+    build: {
+      markdown: {
+        highlight: false,
+        toc: {
+          depth: 3,
+          searchDepth: 3,
+        },
+      },
+    },
+    renderer: {
       anchorLinks: false,
     },
   },
@@ -24,5 +32,16 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+          charset: false,
+          silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import'],
+        },
+      },
+    },
   },
 })
