@@ -2,7 +2,7 @@
 title: JSS XIII 2025 Info
 ---
 
-# Welcome to JSS XIII 2025! 06.-07.06.2025 @ Jyvöskylä
+# Welcome to JSS XIII 2025! 06.-07.06.2025 @ Jyväskylä
 
 Tournament phone: +358 40 734 5892 - All questions welcome =)
 - [Team registration](https://forms.gle/Ay2V6mdgXro7LTTH8)
