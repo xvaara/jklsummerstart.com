@@ -7,7 +7,7 @@ title: JSS XIII 2025
 JSS vol. XIII järjestetään pe-su 6.-8.6.2025.
 Tervetuloa mukaan Jyväskylän kesäiseen ultimate-turnaukseen!
 
-[Info sivu ja ilmoittautuminen. Info and registration!]([url](https://www.jklsummerstart.com/info))
+[Info sivu ja ilmoittautuminen. Info and registration!](/info){class="btn btn-primary btn-lg mx-5 d-block my-3"}
 
 ## Turnaus
 
