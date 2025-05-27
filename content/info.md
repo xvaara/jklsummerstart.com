@@ -43,14 +43,14 @@ You can register at the series you feel best suits you = ). You can also borrow 
 
 ### Saturday
 
-- ~10-16 Games @ <a href="[https://maps.app.goo.gl/oa7ayPgm8jDDCKiE8](https://g.co/kgs/4rHnnfk)"> <b><u>Viitaniemen liikuntapuisto</u></b></a>
+- ~10-16 Games @ <a href="https://g.co/kgs/4rHnnfk"> <b><u>Viitaniemen liikuntapuisto</u></b></a>
 - 16:30-18:30 Dinner @ <a href="https://goo.gl/maps/67MNv3uasNo7pg3W8"><b><u>Lozzi</u></b></a>
 - 16:00-23:30 Sauna (K18!) Saunas warm 19-23 @<a href="https://goo.gl/maps/esKUTGMBVRGrSaYv7"><b><u>Kielo</u></b></a>
 - ?? Possible surprise events
 
 ### Sunday
 
-- 09:30-16:30 Games @ <a href="[https://maps.app.goo.gl/oa7ayPgm8jDDCKiE8](https://g.co/kgs/4rHnnfk)"> <b><u>Viitaniemi</u></b></a>
+- 09:30-16:30 Games @ <a href="https://g.co/kgs/4rHnnfk"> <b><u>Viitaniemi</u></b></a>
 - 16:30 - Prize ceremony
 
 ### Whatsapp info group
