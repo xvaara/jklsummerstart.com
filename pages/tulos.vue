@@ -13,7 +13,7 @@ useHead({
 })
 const data = ref(null)
 onMounted(() => {
-  const e = new EventSource('https://data.mhx.fi/jss-data')
+  const e = new EventSource('https://data.mhx.fi/jss/data')
   e.onmessage = (event) => {
     data.value = JSON.parse(event.data)
   }
