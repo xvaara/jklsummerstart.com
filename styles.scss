@@ -245,16 +245,32 @@ td.teamname {
   word-break: break-word;
 }
 .slots td {
-  word-break: break-word;
+  // word-break: break-word;
   // width: 20%;
   // min-width: 60px;
 }
-.slots tr:first-child td:nth-child(1n+2) {
+.slots-rotate tr:first-child td:nth-child(1n+2) {
   writing-mode: sideways-lr;
   max-height: min-content;
-  word-break: initial;
-  
+  max-width: min-content;
+  text-align: start;
+  // word-break: initial;
+  width: fit-content;
 }
+
+@-moz-document url-prefix() {
+  .slots-rotate tr:first-child td:nth-child(1n+2) {
+    writing-mode: sideways-lr;
+    min-width: 2em;
+    width: fit-content;
+    // max-height: 5em;
+    text-align: end;
+    word-break: initial;
+    padding: 5px 2px;
+  
+  }
+}
+
 @media screen and (max-width: 568px) {
   .timetable th {
     width: 0;

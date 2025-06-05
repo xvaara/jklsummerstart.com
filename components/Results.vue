@@ -10,7 +10,7 @@
     </BDropdown>
   </div>
   <div class="row">
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-lg-auto flex-grow-1">
       <div v-for="g in filteredTimetable " :key="g.name" class="my-3 bg-block p-1">
         <h3>{{ g.name }}</h3>
 
@@ -49,14 +49,14 @@
         </table>
       </div>
     </div>
-    <div class="col-12 col-lg-6">
+    <div class="col-auto" style="width: min-content">
       <div class="bg-block my-3 p-1 p-lg-3">
         <h1>Lohkot</h1>
         <div v-for="g in filteredSlots" :key="g.name">
           <div class="mt-3">
             <h3>{{ g.name }}</h3>
-            <div class="table-responsive">
-              <table class="table table-bordered table-sm slots" style="--bs-body-bg: transparent; --bs-emphasis-color: white;">
+            <div class="table-respssonsive">
+              <table class="table  table-sm slots " :class="{ 'table-bordered  slots-rotate': g.rows[0].c }" style="--bs-body-bg: transparent; --bs-emphasis-color: white;">
                 <tbody class="">
                   <tr v-for="row in g.rows" :key="g.name + row.a">
                     <td> {{ row.a }} </td>
@@ -95,17 +95,18 @@
           </div>
         </div>
       </div>
-
-      <div class="bg-block p-3">
-        <template v-for="(r, i) in rules">
-          <ul v-if="r[0] === 'li'" :key="i" class="rules mb-0">
-            <li v-html="r[1]" />
-          </ul>
-          <template v-else>
-            <component :is="r[0] || 'span'" :key="i" v-html="r[1]" /><br :key="i">
-          </template>
+    </div>
+  </div>
+  <div class="container">
+    <div class="bg-block p-3">
+      <template v-for="(r, i) in rules">
+        <ul v-if="r[0] === 'li'" :key="i" class="rules mb-0">
+          <li v-html="r[1]" />
+        </ul>
+        <template v-else>
+          <component :is="r[0] || 'span'" :key="i" v-html="r[1]" /><br :key="i">
         </template>
-      </div>
+      </template>
     </div>
   </div>
 </template>
