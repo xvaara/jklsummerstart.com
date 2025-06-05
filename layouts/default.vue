@@ -9,15 +9,15 @@
 
     <!-- foo -->
     <div id="bg1" ref="bg1" :style="style1">
-&nbsp;
+      &nbsp;
     </div>
     <!-- foo -->
     <div id="bg2" ref="bg2" :style="style2">
-&nbsp;
+      &nbsp;
     </div>
     <!-- foo -->
     <div class="bg-overlay">
-&nbsp;
+      &nbsp;
     </div>
     <!-- foo -->
 

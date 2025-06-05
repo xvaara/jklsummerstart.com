@@ -29,7 +29,12 @@ export default defineNuxtConfig({
       title: 'Jyväskylä SummerStart',
       titleTemplate: '%s - Jyväskylä SummerStart',
       meta: [{ name: 'description', content: 'Ultimate tournament in Jyväskylä Finland organized in may each year.' }],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'stylesheet', href: 'https://static.nrk.no/nrk-sans/latest/nrk-sans.min.css' },
+      ],
     },
+    keepalive: true,
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
   },
@@ -50,4 +55,6 @@ export default defineNuxtConfig({
       routes: ['/'],
     },
   },
+  compatibilityDate: '2025-06-05',
+  ssr: false,
 })
