@@ -71,15 +71,14 @@ const props = defineProps({
 })
 
 const timetable = ref([])
-const now = ref(new Date())
+const now = ref(new Date().toISOString().slice(0, 16)) // '2024-05-25T11:59' format
 setInterval(() => {
   // console.log('check', now.value)
-  if (now.value.getTime() + 60000 < new Date().getTime()) {
+  if (new Date(now.value).getTime() + 60000 < new Date().getTime()) {
     // console.log('now', now.value)
-    now.value = new Date()
+    now.value = new Date().toISOString().slice(0, 16)
   }
 }, 1000)
-// const now = ref('2024-05-25T11:59')
 
 const test = ref(window.location.search.includes('link'))
 

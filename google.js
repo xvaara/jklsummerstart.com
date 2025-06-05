@@ -9,6 +9,7 @@ function onEdit(e) {
   let slots = []
   let curslot
   let curlevel
+  let meta = {}
   // Logger.log(JSON.stringify(data))
   for (let i = 1; i < data.length; i++) {
     const row = data[i]
@@ -72,13 +73,16 @@ function onEdit(e) {
         link: row[22],
       })
     }
+    if (row[0] === 'meta' && row[1] && row[2]) {
+      meta[row[1]] = row[2]
+    }
   }
   // teams = teams.sort;
 
   let srules = source.getSheets()[0]
   let rules = srules.getDataRange().getValues()
 
-  let out = { timetable, slots, teams: teams.sort(), rules }
+  let out = { timetable, slots, teams: teams.sort(), rules, meta }
 
   // Logger.log(JSON.stringify(out));
 
