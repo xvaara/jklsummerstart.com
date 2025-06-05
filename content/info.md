@@ -59,9 +59,9 @@ The whatsapp group is used for quick communication by the tournament organisers,
 
 - [https://chat.whatsapp.com/FMeADbVpDshBAaxhiJokAF]([https://chat.whatsapp.com/FMeADbVpDshBAaxhiJokAF)
 
-## Side events!
+<!-- ## Side events!
 
-### Spikeball - tournament
+
 
 <!-- JSS SPIKE BALL CHAMPIONSHIPS are back! Register as a pair on an individual player. Tournament organisers will do their best to pair up open players. Games for the tournament can be played at any point during the event and winners will be decided with a Power Ranking algorhitm.
 
