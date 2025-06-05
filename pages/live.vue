@@ -40,6 +40,7 @@ function writeWeather(data) {
       .replace('--theme-background-color: #020a14;', '--theme-background-color: transparent;')
       .replace(/\.header \{.*?\}/g, '.header { display: none; }')
       .replace(/\.subheading \{.*?\}/g, '.subheading { display: none; }')
+      .replace(/https:\/\/www\.yr\.no\/assets\/images\/weather-symbols\/dark-mode\/default\//g, '/images/weather-symbols/')
   // )
   // weather.value.contentWindow.document.close()
 }
@@ -54,11 +55,13 @@ useHead({
 const data = ref(null)
 onMounted(() => {
   const e = new EventSource('https://data.mhx.fi/jss/data')
+  // const e = new WebSocket('wss://data.mhx.fi/jss/data')
   e.onmessage = (event) => {
     data.value = JSON.parse(event.data)
   }
 
   const w = new EventSource('https://data.mhx.fi/jss/weather')
+  // const w = new WebSocket('wss://data.mhx.fi/jss/weather')
   w.onmessage = (event) => {
     writeWeather(event.data)
   }
