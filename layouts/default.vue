@@ -23,7 +23,9 @@
 
     <BContainer fluid>
       <Header :no-logo="route.meta.noLogo" :large-logo="route.meta.largeLogo" />
-      <slot />
+      <main>
+        <slot />
+      </main>
       <Footer />
     </BContainer>
   </div>
