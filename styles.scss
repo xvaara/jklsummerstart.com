@@ -247,7 +247,13 @@ td.teamname {
 .slots td {
   word-break: break-word;
   // width: 20%;
-  min-width: 60px;
+  // min-width: 60px;
+}
+.slots tr:first-child td:nth-child(1n+2) {
+  writing-mode: sideways-lr;
+  max-height: min-content;
+  word-break: initial;
+  
 }
 @media screen and (max-width: 568px) {
   .timetable th {
