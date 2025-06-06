@@ -48,9 +48,9 @@ export default defineNuxtConfig({
         },
       },
     },
-    build: {
-      minify: 'terser',
-    },
+    // build: {
+    //   minify: 'terser',
+    // },
   },
   nitro: {
     prerender: {

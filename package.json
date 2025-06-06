@@ -23,5 +23,8 @@
     "eslint-plugin-format": "^1.0.1",
     "sass": "^1.88.0",
     "unplugin-icons": "^22.1.0"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@latest"
   }
 }
