@@ -59,31 +59,31 @@
               <table class="table  table-sm slots " :class="{ 'table-bordered  slots-rotate': g.rows[0].c }" style="--bs-body-bg: transparent; --bs-emphasis-color: white;">
                 <tbody class="">
                   <tr v-for="row in g.rows" :key="g.name + row.a">
-                    <td> {{ row.a }} </td>
+                    <td> <span>{{ row.a }}</span> </td>
 
                     <td v-if="row.b === 'XXXX'" style="background-color: rgba(204,204,204,0.5);" />
                     <td v-else>
-                      {{ row.b }}
+                      <span>{{ row.b }}</span>
                     </td>
 
                     <td v-if="row.c === 'XXXX'" style="background-color: rgba(204,204,204,0.5);" />
                     <td v-else-if="g.rows[0].c">
-                      {{ row.c }}
+                      <span>{{ row.c }}</span>
                     </td>
 
                     <td v-if="row.d === 'XXXX'" style="background-color: rgba(204,204,204,0.5);" />
                     <td v-else-if="g.rows[0].d">
-                      {{ row.d }}
+                      <span>{{ row.d }}</span>
                     </td>
 
                     <td v-if="row.e === 'XXXX'" style="background-color: rgba(204,204,204,0.5);" />
                     <td v-else-if="g.rows[0].e">
-                      {{ row.e }}
+                      <span>{{ row.e }}</span>
                     </td>
 
                     <td v-if="row.f === 'XXXX'" style="background-color: rgba(204,204,204,0.5);" />
                     <td v-else-if="g.rows[0].f">
-                      {{ row.f }}
+                      <span>{{ row.f }}</span>
                     </td>
                   </tr>
                 </tbody>
