@@ -5,7 +5,7 @@
       {{ current?.[0]?.datename }}
     </h2>
     <h3 v-if="current[0] !== next[0]" class="text-center">
-      Now {{ now }}
+      Now
     </h3>
     <div v-if="current[0] !== next[0]" class="d-flex my-3 gap-3 justify-content-center flex-wrap">
       <div v-for="e in current" :key="e" class="card bg-dark fs-4 flex-shrink-1">
@@ -71,7 +71,9 @@ const props = defineProps({
 })
 
 const timetable = ref([])
-const now = ref(new Date().toISOString().slice(0, 16)) // '2024-05-25T11:59' format
+const now = ref(new Date())
+// .toISOString().slice(0, 16))
+// '2024-05-25T11:59' format
 setInterval(() => {
   // console.log('check', now.value)
   if (new Date(now.value).getTime() + 60000 < new Date().getTime()) {
