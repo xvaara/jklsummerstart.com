@@ -25,7 +25,7 @@
                   {{ row.team1 }} <span v-if="row.pool1"> ({{ row.pool1 }})</span>
                 </td>
                 <td style="white-space: nowrap; text-align: center;">
-                  <span v-if="row.score1"> {{ row.score1 }} - {{ row.score2 }} </span>
+                  <span v-if="row.score1 !== ''"> {{ row.score1 }} - {{ row.score2 }} </span>
                 </td>
                 <td class="teamname">
                   {{ row.team2 }} <span v-if="row.pool2"> ({{ row.pool2 }})</span>
