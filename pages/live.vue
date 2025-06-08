@@ -85,6 +85,7 @@ onMounted(() => {
   const e = new EventSource('https://data.mhx.fi/jss/data')
   // const e = new WebSocket('wss://data.mhx.fi/jss/data')
   e.onmessage = (event) => {
+    // console.log('event', event.data)
     data.value = JSON.parse(event.data)
   }
 
