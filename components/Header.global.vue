@@ -12,9 +12,9 @@
           <BNavItem to="/info" active-class="active">
             Info 2025
           </BNavItem>
-          <BNavItem to="/live" active-class="active">
+          <!-- <BNavItem to="/live" active-class="active">
             Live
-          </BNavItem>
+          </BNavItem> -->
           <BNavItem to="/tulokset" active-class="active">
             Tulokset
           </BNavItem>
