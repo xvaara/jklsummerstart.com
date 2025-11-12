@@ -57,7 +57,6 @@ You can register at the series you feel best suits you = ). You can also borrow 
 
 The whatsapp group is used for quick communication by the tournament organisers, but can also be used for player to player talk.
 
-[https://chat.whatsapp.com/FMeADbVpDshBAaxhiJokAF](https://chat.whatsapp.com/FMeADbVpDshBAaxhiJokAF)
 
 <!-- ## Side events!
 
