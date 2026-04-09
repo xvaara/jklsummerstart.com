@@ -6,9 +6,9 @@ title: JSS XIV 2026 Info
 
 Tournament phone: +358 40 734 5892 - All questions welcome =)
 
-<!-- [Team registration](https://forms.gle/Ay2V6mdgXro7LTTH8){class="btn btn-primary btn-lg"}
+[Team registration](https://forms.gle/bJZs32s9tTYzyFaG6){class="btn btn-primary btn-lg"}
 
-[Individual player registration](https://forms.gle/GxmKnri1HLv1Uqau8){class="btn btn-primary btn-lg"} -->
+[Individual player registration](https://forms.gle/pyrtrZgEsMT7gpky7){class="btn btn-primary btn-lg"}
 
 ## Tournament timeline
 
