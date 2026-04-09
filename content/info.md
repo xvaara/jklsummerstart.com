@@ -1,20 +1,22 @@
 ---
-title: JSS XIII 2025 Info
+title: JSS XIV 2026 Info
 ---
 
-# Welcome to JSS XIII 2025! 06.-08.06.2025 @ Jyväskylä
+# Welcome to JSS XIV 2026! 15.-17.05.2026 @ Jyväskylä
 
 Tournament phone: +358 40 734 5892 - All questions welcome =)
 
-<!-- [Team registration](https://forms.gle/Ay2V6mdgXro7LTTH8){class="btn btn-primary btn-lg"}
+[Team registration](https://forms.gle/bJZs32s9tTYzyFaG6){class="btn btn-primary btn-lg"}
 
-[Individual player registration](https://forms.gle/GxmKnri1HLv1Uqau8){class="btn btn-primary btn-lg"} -->
+[Individual player registration](https://forms.gle/pyrtrZgEsMT7gpky7){class="btn btn-primary btn-lg"}
 
 ## Tournament timeline
 
-### Friday
+Stay tuned, more info coming Soon(tm)!
 
-#### 16 o'clock --> Pretournament event at <a href="https://goo.gl/maps/DFCAioRM6VsbvX8JA"><b><u>Tuomiojärvi Beach</u></b></a>
+<!-- ### Friday
+
+#### 16 o'clock  Pretournament event at <a href="https://goo.gl/maps/DFCAioRM6VsbvX8JA"><b><u>Tuomiojärvi Beach</u></b></a>
 
 Barbeque - Some food provided by JSW, if you want to eat a full meal you should also bring something yourself = )
 
@@ -55,7 +57,7 @@ You can register at the series you feel best suits you = ). You can also borrow 
 
 ### Whatsapp info group
 
-The whatsapp group is used for quick communication by the tournament organisers, but can also be used for player to player talk.
+The whatsapp group is used for quick communication by the tournament organisers, but can also be used for player to player talk.-->
 
 
 <!-- ## Side events!
