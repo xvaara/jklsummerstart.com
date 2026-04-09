@@ -9,22 +9,23 @@
   },
   "dependencies": {
     "@nuxt/content": "^3.5.1",
-    "@nuxt/image": "^1.10.0",
+    "@nuxt/image": "^2.0.0",
+    "better-sqlite3": "^12.8.0",
     "bootstrap-styles": "^5.3.3",
-    "bootstrap-vue-next": "^0.30.0",
-    "nuxt": "^3.17.3"
+    "bootstrap-vue-next": "^0.44.2",
+    "nuxt": "^4.4.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.13.0",
-    "@bootstrap-vue-next/nuxt": "^0.30.0",
+    "@antfu/eslint-config": "^8.1.1",
+    "@bootstrap-vue-next/nuxt": "^0.44.2",
     "@iconify-json/bi": "^1.2.4",
-    "@vueuse/core": "^13.3.0",
-    "eslint": "9.28.0",
-    "eslint-plugin-format": "^1.0.1",
+    "@vueuse/core": "^14.2.1",
+    "eslint": "10.2.0",
+    "eslint-plugin-format": "^2.0.1",
     "sass": "^1.88.0",
-    "unplugin-icons": "^22.1.0"
+    "unplugin-icons": "^23.0.1"
   },
   "overrides": {
-    "vite": "npm:rolldown-vite@latest"
+    "vite": "^8.0.0"
   }
 }
