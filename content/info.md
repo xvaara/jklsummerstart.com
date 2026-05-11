@@ -49,9 +49,9 @@ You can register at the series you feel best suits you = ). You can also borrow 
 
 - ~10-16 Games @ <a href="https://g.co/kgs/4rHnnfk"><b><u>Viitaniemen liikuntapuisto</u></b></a>
 - 16:30-18:30 Dinner @ the saunas, more info soon!
-- 16:00-23:30 JUNIOR FRIENDLY Sauna Saunas warm 18-23 @<a href="https://maps.app.goo.gl/E6NyaZFoDZzLsVga7"><b><u>Kielo</u></b></a>
+- 16:00-23:30 JUNIOR FRIENDLY Sauna Saunas + HOT TUB, sauna warm 18-23, palju warm all the time! @<a href="https://maps.app.goo.gl/E6NyaZFoDZzLsVga7"><b><u>OPINKI</u></b></a>
 - 16:00-23:30 BIG SAUNA (K18!) Saunas warm 19-23 @<a href="https://goo.gl/maps/esKUTGMBVRGrSaYv7"><b><u>Kielo</u></b></a>
-- 23:30-01.00 More Sauna (K18) @ <a href="https://maps.app.goo.gl/E6NyaZFoDZzLsVga7"><b><u>Kielo</u></b></a>
+- 23:30-01.00 More Sauna (K18) @ <a href="https://maps.app.goo.gl/E6NyaZFoDZzLsVga7"><b><u>OPINKIVI</u></b></a>
 - ?? Possible surprise events
 
 ### Sunday
