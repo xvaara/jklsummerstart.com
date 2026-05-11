@@ -6,15 +6,17 @@ title: JSS XIV 2026 Info
 
 Tournament phone: +358 40 734 5892 - All questions welcome =)
 
-[Team registration](https://forms.gle/bJZs32s9tTYzyFaG6){class="btn btn-primary btn-lg"}
-
+<!-- 
+Last years links!
+[Team registration](https://forms.gle/bJZs32s9tTYzyFaG6){class="btn btn-primary btn-lg"} 
 [Individual player registration](https://forms.gle/pyrtrZgEsMT7gpky7){class="btn btn-primary btn-lg"}
+!-->
 
 ## Tournament timeline
 
 Stay tuned, more info coming Soon(tm)!
 
-<!-- ### Friday
+### Friday
 
 #### 16 o'clock  Pretournament event at <a href="https://goo.gl/maps/DFCAioRM6VsbvX8JA"><b><u>Tuomiojärvi Beach</u></b></a>
 
@@ -46,8 +48,10 @@ You can register at the series you feel best suits you = ). You can also borrow 
 ### Saturday
 
 - ~10-16 Games @ <a href="https://g.co/kgs/4rHnnfk"><b><u>Viitaniemen liikuntapuisto</u></b></a>
-- 16:30-18:30 Dinner @ <a href="https://goo.gl/maps/67MNv3uasNo7pg3W8"><b><u>Lozzi</u></b></a>
-- 16:00-23:30 Sauna (K18!) Saunas warm 19-23 @<a href="https://goo.gl/maps/esKUTGMBVRGrSaYv7"><b><u>Kielo</u></b></a>
+- 16:30-18:30 Dinner @ the saunas, more info soon!
+- 16:00-23:30 JUNIOR FRIENDLY Sauna Saunas warm 18-23 @<a href="https://maps.app.goo.gl/E6NyaZFoDZzLsVga7"><b><u>Kielo</u></b></a>
+- 16:00-23:30 BIG SAUNA (K18!) Saunas warm 19-23 @<a href="https://goo.gl/maps/esKUTGMBVRGrSaYv7"><b><u>Kielo</u></b></a>
+- 23:30-01.00 More Sauna (K18) @ <a href="https://maps.app.goo.gl/E6NyaZFoDZzLsVga7"><b><u>Kielo</u></b></a>
 - ?? Possible surprise events
 
 ### Sunday
@@ -57,7 +61,9 @@ You can register at the series you feel best suits you = ). You can also borrow 
 
 ### Whatsapp info group
 
-The whatsapp group is used for quick communication by the tournament organisers, but can also be used for player to player talk.-->
+@ <a href="https://chat.whatsapp.com/Id1RtHAeHoc9PbtZx6bLs1"><b><u>INFO GROUP LINK</u></b></a>
+
+The whatsapp group is used for quick communication by the tournament organisers, but can also be used for player to player talk.
 
 
 <!-- ## Side events!
