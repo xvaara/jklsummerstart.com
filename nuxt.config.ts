@@ -18,6 +18,10 @@ export default defineNuxtConfig({
         },
       },
     },
+    database: {
+      type: 'd1',
+      bindingName: 'DB',
+    },
     renderer: {
       anchorLinks: false,
     },
