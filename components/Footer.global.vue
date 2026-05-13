@@ -13,7 +13,7 @@
     </Block>
   </div>
   <div class="text-center">
-    &copy; 2024 Jyväskylä Sleepwalkers ry
+    &copy; 2025 Jyväskylä Sleepwalkers ry
   </div>
 </template>
 

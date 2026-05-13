@@ -56,7 +56,7 @@
           <div class="mt-3">
             <h3>{{ g.name }}</h3>
             <div class="table-respssonsive">
-              <table class="table  table-sm slots " :class="{ 'table-bordered  slots-rotate': g.rows[0].c }" style="--bs-body-bg: transparent; --bs-emphasis-color: white;">
+              <table class="table  table-sm slots " :class="{ 'table-bordered  slots-rotate': g.rows[0]?.c }" style="--bs-body-bg: transparent; --bs-emphasis-color: white;">
                 <tbody class="">
                   <tr v-for="row in g.rows" :key="g.name + row.a">
                     <td> <span>{{ row.a }}</span> </td>

@@ -88,7 +88,7 @@ const { data: history } = await useAsyncData(`history`, () => queryCollection('c
 const countdown = ref(null)
 
 // 24.05.2024 klo 16
-const end = new Date('05/25/2024 10:00 PM')
+const end = new Date('05/16/2026 10:30 AM')
 
 const _second = 1000
 const _minute = _second * 60
