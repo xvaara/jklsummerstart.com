@@ -1,6 +1,8 @@
 <template>
   <div>
-    <ScheduleNext v-if="data.teams" :data="data" />
+    <ClientOnly>
+      <ScheduleNext v-if="data.teams" :data="data" />
+    </ClientOnly>
 
     <div class="d-flex justify-content-center">
       <div ref="weatherContainer" class="bg-block weather-container" style="width: min(100%, 829px);">
@@ -19,7 +21,9 @@
       </div>
     </div>
 
-    <Results v-if="data.teams" :data="data" />
+    <ClientOnly>
+      <Results v-if="data.teams" :data="data" />
+    </ClientOnly>
   </div>
 </template>
 

@@ -11,7 +11,7 @@
     <BRow>
       <div class="col-12 col-lg">
         <Block>
-          <ContentRenderer v-if="welcome" :value="welcome" />
+          <Comark v-if="welcome" :markdown="welcome.markdown" />
         </Block>
         <!-- <Block class="mt-3">
           <h2>Ilmoittautuminen</h2>
@@ -41,9 +41,7 @@
     <BRow class="my-5">
       <div class="col-12 col-lg-6">
         <Block>
-          <ContentRenderer :value="history">
-            <template #empty />
-          </ContentRenderer>
+          <Comark v-if="history" :markdown="history.markdown" />
         </Block>
       </div>
       <BCol class="mt-3 mt-lg-0">
@@ -53,9 +51,7 @@
           </h2>
           <div v-for="winner in winners" :key="winner.title">
             <h6>{{ winner.title }}</h6>
-            <ContentRenderer :value="winner">
-              <template #empty />
-            </ContentRenderer>
+            <Comark :markdown="winner.markdown" />
           </div>
           <NuxtLink to="/tulokset" class="btn btn-primary btn-lg mx-5 d-block my-3">
             Kaikki tulokset <IconChevron />
@@ -77,13 +73,9 @@ useHead({
   title: 'Etusivu',
 })
 
-const { data: winners } = await useAsyncData(`winners-front`, () => queryCollection('content')
-  .where('path', 'LIKE', '/winners/%')
-  .order('title', 'DESC')
-  .limit(2)
-  .all())
-
-const { data: history } = await useAsyncData(`history`, () => queryCollection('content').path('/history').first())
+const content = useContent()
+const winners = content.list('/winners/').sort((a, b) => b.title.localeCompare(a.title)).slice(0, 2)
+const history = content.get('/history')
 
 const countdown = ref(null)
 
@@ -132,5 +124,5 @@ onMounted(() => {
   timer = setInterval(showRemaining, 1000)
 })
 
-const { data: welcome } = await useAsyncData(`welcome`, () => queryCollection('content').path('/welcome').first())
+const welcome = content.get('/welcome')
 </script>

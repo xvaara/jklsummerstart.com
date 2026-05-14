@@ -6,9 +6,7 @@
       </h2>
       <div v-for="winner in winners" :key="winner.title">
         <h6>{{ winner.title }}</h6>
-        <ContentRenderer :value="winner">
-          <template #empty />
-        </ContentRenderer>
+        <Comark :markdown="winner.markdown" />
       </div>
     </Block>
   </BContainer>
@@ -19,8 +17,5 @@ useHead({
   title: 'Tulokset',
 })
 
-const { data: winners } = await useAsyncData(`winners`, () => queryCollection('content')
-  .where('path', 'LIKE', '/winners/%')
-  .order('title', 'DESC')
-  .all())
+const winners = useContent().list('/winners/').sort((a, b) => b.title.localeCompare(a.title))
 </script>

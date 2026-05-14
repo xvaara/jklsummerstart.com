@@ -1,14 +1,12 @@
 <template>
   <BContainer>
     <div class="bg-block p-3">
-      <ContentRenderer v-if="page" :value="page" />
+      <Comark v-if="page" :markdown="page.markdown" />
     </div>
   </BContainer>
 </template>
 
 <script lang="ts" setup>
 const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () => {
-  return queryCollection('content').path(route.path).first()
-})
+const page = useContent().get(route.path)
 </script>

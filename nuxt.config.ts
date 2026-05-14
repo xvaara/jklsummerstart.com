@@ -2,30 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxt/content',
+    '@comark/nuxt',
     '@nuxt/image',
     '@bootstrap-vue-next/nuxt',
     ['unplugin-icons/nuxt', { /* options */ }],
   ],
   css: ['~/styles.scss'],
-  content: {
-    build: {
-      markdown: {
-        highlight: false,
-        toc: {
-          depth: 3,
-          searchDepth: 3,
-        },
-      },
-    },
-    database: {
-      type: 'd1',
-      bindingName: 'DB',
-    },
-    renderer: {
-      anchorLinks: false,
-    },
-  },
   app: {
     head: {
       charset: 'utf-8',
