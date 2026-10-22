@@ -4,7 +4,7 @@ title: JSS XIV 2026
 
 # JSS XIV
 
-JSS vol. XIV järjestetään pe-su 15.-17.5.2026.
+JSS vol. XV järjestetään pe-su 14.-16.5.2027.
 Tervetuloa mukaan Jyväskylän kesäiseen ultimate-turnaukseen!
 
 [Info sivu](/info){class="btn btn-primary btn-lg mx-5 d-block my-3"}
