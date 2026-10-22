@@ -2,7 +2,7 @@
 title: JSS XV 2027 Info
 ---
 
-# Welcome to JSS XIV 2026! 14.-16.05.2027 @ Jyväskylä
+# Welcome to JSS XIV 2027! 14.-16.05.2027 @ Jyväskylä
 
 Tournament phone: +358 40 734 5892 - All questions welcome =)
 
