@@ -1,8 +1,8 @@
 ---
-title: JSS XIV 2026 Info
+title: JSS XV 2027 Info
 ---
 
-# Welcome to JSS XIV 2026! 15.-17.05.2026 @ Jyväskylä
+# Welcome to JSS XIV 2026! 14.-16.05.2027 @ Jyväskylä
 
 Tournament phone: +358 40 734 5892 - All questions welcome =)
 
@@ -21,7 +21,7 @@ Stay tuned, more info coming Soon(tm)!
 #### 16 o'clock  Pretournament event at <a href="https://goo.gl/maps/DFCAioRM6VsbvX8JA"><b><u>Tuomiojärvi Beach</u></b></a>
 
 Barbeque - Some food provided by JSW, if you want to eat a full meal you should also bring something yourself = )
-
+<!-- 
 #### JSS Disc Golf battle at Seppälankangas Disc Golf Course. You can play your round at any point before Sunday 12:00!
 
 We compete in five different series, all them with their own prizes. To participate you can play your round at the course and report your score to Ilari.
@@ -44,7 +44,7 @@ You can register at the series you feel best suits you = ). You can also borrow 
 #### <a href="https://goo.gl/maps/TLdgUFpVno6wznUVA"><b><u>Seppälankangas Disc Golf Park</u></b></a>
 
 #### Spikeball, beach volley and casual get-together is also happening at the beach!
-
+!-->
 ### Saturday
 
 - ~10-16 Games @ <a href="https://g.co/kgs/4rHnnfk"><b><u>Viitaniemen liikuntapuisto</u></b></a>
@@ -61,7 +61,7 @@ You can register at the series you feel best suits you = ). You can also borrow 
 
 ### Whatsapp info group
 
-@ <a href="https://chat.whatsapp.com/Id1RtHAeHoc9PbtZx6bLs1"><b><u>INFO GROUP LINK</u></b></a>
+@ <a href="https://chat.whatsapp.com/Cyzy48ykTwN05EyVxFK2uQ"><b><u>INFO GROUP LINK</u></b></a>
 
 The whatsapp group is used for quick communication by the tournament organisers, but can also be used for player to player talk.
 
