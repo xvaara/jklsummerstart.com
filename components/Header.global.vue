@@ -10,7 +10,7 @@
             Etusivu
           </BNavItem>
           <BNavItem to="/info" active-class="active">
-            Info 2026
+            Info 2027
           </BNavItem>
           <BNavItem to="/live" active-class="active">
             Live
